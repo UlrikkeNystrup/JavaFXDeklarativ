@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="369.0" prefWidth="591.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GuiController">
+   <children>
+      <Label layoutX="87.0" layoutY="6.0" text="CPR:" />
+      <TextField fx:id="CPR" layoutX="115.0" layoutY="2.0" />
+      <Button onAction="#startRecording" layoutX="282.0" layoutY="1.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="118.0" style="-fx-background-color: lightGreen; -fx-border-color: black;" text="Start Måling" textFill="#12360d" />
+      <Button onAction="#stopDataRecording" layoutX="400.0" layoutY="1.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="129.0" style="-fx-background-color: red; -fx-border-color: black;" text="Stop Måling" textFill="#030303" />
+       <MenuButton mnemonicParsing="false" text="Menu">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Registrer patient" />
+          <MenuItem mnemonicParsing="false" text="Hent data" />
+        </items>
+      </MenuButton>
+      <TextArea fx:id="EcgDataOutput" layoutX="95.0" layoutY="75.0" prefHeight="219.0" prefWidth="434.0" />
+   </children>
+</AnchorPane>
